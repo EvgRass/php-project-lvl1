@@ -1,4 +1,5 @@
 <?php
+
 namespace Brain\Games\Cli;
 
 use function cli\line;
@@ -10,4 +11,3 @@ function welcome()
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
 }
-
