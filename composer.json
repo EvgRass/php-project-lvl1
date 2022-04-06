@@ -1,0 +1,19 @@
+{
+    "name": "hexlet/code",
+    "description": "First Project on Hexlet",
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "evgrass"
+        }
+    ],
+    "require": {},
+    "bin": [
+	      "bin/brain-games"
+    ]
+}
