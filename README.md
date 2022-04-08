@@ -5,4 +5,4 @@
 
 [![check](https://github.com/EvgRass/php-project-lvl1/actions/workflows/check.yml/badge.svg)](https://github.com/EvgRass/php-project-lvl1/actions/workflows/check.yml)
 
-<script id="asciicast-QXGa1rWyoum8qC91lcDPMrJX1" src="https://asciinema.org/a/QXGa1rWyoum8qC91lcDPMrJX1.js" async></script>
+[![asciicast](https://asciinema.org/a/QXGa1rWyoum8qC91lcDPMrJX1.svg)](https://asciinema.org/a/QXGa1rWyoum8qC91lcDPMrJX1)
