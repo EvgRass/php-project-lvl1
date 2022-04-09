@@ -15,9 +15,7 @@ function even()
 
     line("Answer \"{$yes}\" if the number is even, otherwise answer \"{$no}\".");
 
-    $maxQuestions = 4;
-
-    for ($i = 1; $i < $maxQuestions; $i++) {
+    for ($i = 1; $i <= MAXRAUNDS; $i++) {
         $random = rand(1, 100);
         $answer = Engine\getAnswer($random);
 

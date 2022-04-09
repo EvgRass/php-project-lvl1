@@ -13,9 +13,7 @@ function calc()
 
     line("What is the result of the expression?");
 
-    $maxQuestions = 4;
-
-    for ($i = 1; $i < $maxQuestions; $i++) {
+    for ($i = 1; $i <= MAXRAUNDS; $i++) {
         $signs = "+-*";
         $firstVar = rand(1, 100);
         $sign = $signs[rand(0, 2)];

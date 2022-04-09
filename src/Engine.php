@@ -5,6 +5,8 @@ namespace Brain\Games\Engine;
 use function cli\line;
 use function cli\prompt;
 
+define("MAXRAUNDS", 3);
+
 function welcome()
 {
     line('Welcome to the Brain Game!');
