@@ -2,9 +2,10 @@
 
 namespace Brain\Games\Gcd;
 
+use Brain\Games\Engine;
+
 use function cli\line;
 use function cli\prompt;
-use Brain\Games\Engine;
 
 function gcd()
 {
@@ -15,11 +16,11 @@ function gcd()
     for ($i = 1; $i <= MAXRAUNDS; $i++) {
         $firstVar = rand(1, 100);
         $secondVar = rand(1, 100);
-	$correctResult = getGcd($firstVar, $secondVar);
+        $correctResult = getGcd($firstVar, $secondVar);
 
         $answer = Engine\getAnswer("{$firstVar} {$secondVar}");
 
-	if ($answer != $correctResult) {
+        if ($answer != $correctResult) {
             Engine\wrongAnswer($name, $answer, $correctResult);
             return;
         } else {
@@ -34,10 +35,10 @@ function getGcd($fVar, $sVar)
     while (true) {
         if ($fVar === $sVar) {
             return $fVar;
-	}
-	if ($fVar > $sVar) {
+        }
+        if ($fVar > $sVar) {
             $fVar -= $sVar;
-	} else {
+        } else {
             $sVar -= $fVar;
         }
     }
