@@ -35,7 +35,7 @@ function calc()
         $answer = Engine\getAnswer("{$firstVar} {$sign} {$secondVar}");
 
         if ($answer != $correctResult) {
-            Engine\wrongAnswer($name, $answer, $correctResult);
+            Engine\wrongAnswer($name, $answer, "{$correctResult}");
             return;
         } else {
             line("Correct!");
