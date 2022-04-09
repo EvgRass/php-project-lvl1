@@ -6,3 +6,5 @@
 [![check](https://github.com/EvgRass/php-project-lvl1/actions/workflows/check.yml/badge.svg)](https://github.com/EvgRass/php-project-lvl1/actions/workflows/check.yml)
 
 [![asciicast](https://asciinema.org/a/QXGa1rWyoum8qC91lcDPMrJX1.svg)](https://asciinema.org/a/QXGa1rWyoum8qC91lcDPMrJX1)
+
+[![asciicast](https://asciinema.org/a/6v5mrzAdJpFP5rMq6FnleEQRF.svg)](https://asciinema.org/a/6v5mrzAdJpFP5rMq6FnleEQRF)
