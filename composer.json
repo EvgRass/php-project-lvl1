@@ -9,7 +9,7 @@
 	"files": [
 	    "src/Cli.php",
 	    "src/Even.php",
-	    "src/Func.php",
+	    "src/Engine.php",
 	    "src/Calc.php"
 	]
     },

@@ -2,14 +2,14 @@
 
 namespace Brain\Games\Even;
 
-use Brain\Games\Func;
+use Brain\Games\Engine;
 
 use function cli\line;
 use function cli\prompt;
 
 function even()
 {
-    $name = Func\welcome();
+    $name = Engine\welcome();
     $yes = "yes";
     $no = "no";
 
@@ -19,13 +19,13 @@ function even()
 
     for ($i = 1; $i < $maxQuestions; $i++) {
         $random = rand(1, 100);
-        $answer = Func\getAnswer($random);
+        $answer = Engine\getAnswer($random);
 
         if ($random % 2 === 1 && $answer !== $no) {
-            Func\wrongAnswer($name, $answer, $no);
+            Engine\wrongAnswer($name, $answer, $no);
             return;
         } elseif ($random % 2 === 0 && $answer !== $yes) {
-            Func\wrongAnswer($name, $answer, $yes);
+            Engine\wrongAnswer($name, $answer, $yes);
             return;
         } else {
             line("Correct!");

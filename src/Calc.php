@@ -2,14 +2,14 @@
 
 namespace Brain\Games\Calc;
 
-use Brain\Games\Func;
+use Brain\Games\Engine;
 
 use function cli\line;
 use function cli\prompt;
 
 function calc()
 {
-    $name = Func\welcome();
+    $name = Engine\welcome();
 
     line("What is the result of the expression?");
 
@@ -33,10 +33,10 @@ function calc()
                 break;
         }
 
-        $answer = Func\getAnswer($firstVar . $sign . $secondVar);
+        $answer = Engine\getAnswer($firstVar . $sign . $secondVar);
 
         if ($answer != $correctResult) {
-            Func\wrongAnswer($name, $answer, $correctResult);
+            Engine\wrongAnswer($name, $answer, $correctResult);
             return;
         } else {
             line("Correct!");
