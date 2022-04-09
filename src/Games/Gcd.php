@@ -30,7 +30,7 @@ function gcd()
     line("Congratulations, %s!", $name);
 }
 
-function getGcd($fVar, $sVar)
+function getGcd(int $fVar, int $sVar)
 {
     while (true) {
         if ($fVar === $sVar) {

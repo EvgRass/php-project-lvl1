@@ -18,6 +18,7 @@ function calc()
         $firstVar = rand(1, 100);
         $sign = $signs[rand(0, 2)];
         $secondVar = rand(1, 100);
+        $correctResult = 0;
 
         switch ($sign) {
             case "+":

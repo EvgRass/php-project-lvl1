@@ -31,7 +31,7 @@ function prime()
     line("Congratulations, %s!", $name);
 }
 
-function isPrime($num)
+function isPrime(int $num)
 {
     if ($num === 1) {
         return false;

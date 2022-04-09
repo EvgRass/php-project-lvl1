@@ -15,12 +15,12 @@ function welcome()
     return $name;
 }
 
-function getAnswer($expression)
+function getAnswer(string $expression)
 {
     return prompt("Question: {$expression}");
 }
 
-function wrongAnswer($name, $answerWr, $answerCor)
+function wrongAnswer(string $name, string $answerWr, string $answerCor)
 {
     line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answerWr, $answerCor);
     line("Let's try again, %s!", $name);
