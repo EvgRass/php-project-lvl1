@@ -32,7 +32,7 @@ function calc()
                 break;
         }
 
-        $answer = Engine\getAnswer($firstVar . " " . $sign . " "  . $secondVar);
+        $answer = Engine\getAnswer("{$firstVar} {$sign} {$secondVar}");
 
         if ($answer != $correctResult) {
             Engine\wrongAnswer($name, $answer, $correctResult);

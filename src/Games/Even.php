@@ -17,7 +17,7 @@ function even()
 
     for ($i = 1; $i <= MAXRAUNDS; $i++) {
         $random = rand(1, 100);
-        $answer = Engine\getAnswer($random);
+        $answer = Engine\getAnswer("{$random}");
 
         if ($random % 2 === 1 && $answer !== $no) {
             Engine\wrongAnswer($name, $answer, $no);

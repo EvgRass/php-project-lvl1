@@ -16,7 +16,7 @@ function prime()
     for ($i = 1; $i <= MAXRAUNDS; $i++) {
         $random = rand(1, 100);
         $correctAnswer = isPrime($random);
-        $answer = Engine\getAnswer($random);
+        $answer = Engine\getAnswer("{$random}");
 
         if (!$correctAnswer && $answer !== "no") {
             Engine\wrongAnswer($name, $answer, "no");
