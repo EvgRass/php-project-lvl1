@@ -2,9 +2,10 @@
 
 namespace Brain\Games\Calc;
 
+use Brain\Games\Func;
+
 use function cli\line;
 use function cli\prompt;
-use Brain\Games\Func;
 
 function calc()
 {
@@ -19,27 +20,27 @@ function calc()
         $firstVar = rand(1, 100);
         $sign = $signs[rand(0, 2)];
         $secondVar = rand(1, 100);
-				            
+
         switch ($sign) {
-            case "+": 
+            case "+":
                 $correctResult = $firstVar + $secondVar;
                 break;
-            case "-": 
+            case "-":
                 $correctResult = $firstVar - $secondVar;
                 break;
-            case "*": 
+            case "*":
                 $correctResult = $firstVar * $secondVar;
                 break;
         }
 
-        $answer = Func\getAnswer($firstVar.$sign.$secondVar);
+        $answer = Func\getAnswer($firstVar . $sign . $secondVar);
 
-	if ($answer != $correctResult) {
-	    Func\wrongAnswer($name, $answer, $correctResult);
-	    return;
-	} else {
-	    line("Correct!");
-	}
+        if ($answer != $correctResult) {
+            Func\wrongAnswer($name, $answer, $correctResult);
+            return;
+        } else {
+            line("Correct!");
+        }
     }
     line("Congratulations, %s!", $name);
 }
